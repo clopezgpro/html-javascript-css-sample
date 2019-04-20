@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1 id="titulo">Título de nuestro sitio Web</h1>
+    <div id="subtitulo"></div>
+    <p>1.- Don Quijote de la Manchaa​ es una novela escrita por el español <b>Miguel de Cervantes</b>Publicada su primera parte con el título de El ingenioso hidalgo don Quijote de la Mancha a comienzos de 1605 
+    </p>
+
+    <p id="segundo">2.-  es la obra más destacada de la literatura española y de las principales de la literatura universal, además de ser la más leída después de la Biblia.1​2​ En 1615 apareció su continuación con el título de Segunda parte del ingenioso caballero </p>
+
+    <p>3.- El Quijote de 1605 se publicó dividido en cuatro partes; pero al aparecer el Quijote de 1615 en calidad de Segunda parte de la obra, quedó revocada de hecho la partición en cuatro secciones del volumen publicado</p>
+    
+    <script>
+        var saltoLinea = "<br>";
+        //Acceder a elemento por nombre tag
+        var elementosP = document.getElementsByTagName("p");
+        //Acceder a elemento por id tag
+        var segundoParrafo = document.getElementById("segundo").innerHTML;
+
+        document.write(elementosP + saltoLinea);
+        document.write(elementosP[0].innerHTML + saltoLinea);
+        document.write(segundoParrafo + saltoLinea);
+        //Crear nodos del DOM
+        //1.-Crear el elemento
+        var elemento = document.createElement("h2");
+        //2.-Crear el nodo de texto
+        var contenido = document.createTextNode("Este es el titular");
+        //3.-Añadir el nodo de texto al elemento
+        elemento.appendChild(contenido);
+        //4.-Agregar atributos al elemento
+        elemento.setAttribute("align","center");
+        //5.-Agregar el elemento al documento
+        /*Esto selecciona el div con el id subtitulo 
+        e incrusta dentro el elemento de appendchild*/
+        document.getElementById("subtitulo").appendChild(elemento);
+        //document.body.appendChild(elemento);
+
+    </script>
+</body>
+</html>

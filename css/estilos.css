@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*Selector Universal*/
+/* *{ */
+/* 	/*Interlineado*/
+* /
+	/* 	margin: 10; */
+	/* 	padding: 10; */
+	/* 	color: lime; */
+	/* } */
+	/*Contenido*/ 
+body {
+	background: gray;
+	color: #fff;
+}
+
+h1, h2 {
+	color: aqua;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 40px;
+}
+/*Selectores descendentes un a dentro de un div*/ 
+div a{
+	font-size: larger;
+	color: green;
+}
+/*clase para estilos*/ 
+.claseNaranja{
+	color: orange;
+}
+
+a[href="http://www.imagen.com"]{
+	color:  aqua;
+	font-size: small;
+}
+	

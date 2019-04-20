@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Condicionales</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// > menor que
+			// < mayor que
+			// >= mayor o igual que
+			// <= menor o igual que
+			// == igual que
+			// != distinto de
+			var saltoLinea = "<br>";
+			var valor = "ValorDos";
+			var numero = 2;
+			
+			if(valor == "ValorUno"){
+				document.write("Valido");
+			}else if(valor == "ValorDos"){
+				document.write("Valido elseif" + saltoLinea);
+			}else{
+				document.write("No valido" + saltoLinea);
+			}
+		
+			if(numero > 1){
+				document.write("Valor mayor que 1" + saltoLinea);
+			}
+			
+			if(numero > 1 && valor == "ValorDos"){
+				document.write(true + saltoLinea);
+			}
+			
+			if(numero === "2"){
+				document.write("Mismo valor y tipo" + saltoLinea);
+			}else{
+				document.write("Valor o tipo diferente" + saltoLinea);
+			}
+			
+			
+		</script>
+		
+	</body>
+</html>

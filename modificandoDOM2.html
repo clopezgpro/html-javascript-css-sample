@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modificando, Remplazando y eliminando nodos del DOM</title>
+</head>
+<body>
+    <ol id="lista">
+        <li id="primero">1.-Don Quijote de la Manchaa​ es una novela escrita</li>
+        <li>2.-española y de las principales de la literatura </li>
+    </ol>
+    
+    <script>
+        var saltoLinea = "<br>";
+        //Crear elemento
+        var primerElemento = document.getElementById("primero");
+        primerElemento.innerHTML = "Nuevo Texto <i>Texto Añadido</i>";
+        //primerElemento.textContent = "Nuevo Texto <i>Texto Añadido</i>";
+        var elemento = document.createElement("li")
+        var contenido = document.createTextNode("Nuevo Texto Nodo" + saltoLinea);
+        primerElemento.appendChild(contenido);
+        //Reemplazar nodos
+        var padre = document.getElementsByTagName("li")[0].parentNode
+        var referencia = document.getElementsByTagName("li")[0];
+        //padre.replaceChild(elemento, referencia);
+        //Eliminar nodos
+        //padre.removeChild(referencia);
+
+    </script>
+</body>
+</html>

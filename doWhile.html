@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Do While</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var saltoLinea = "<br>";
+			var matriz = ["valor1","valor2","valor3","valor8","valor9","valor10"];
+			var numPosiciones = matriz.length - 1;
+			var i = 0;
+			
+			while(i <= 10){
+				document.write(i + saltoLinea);
+				//i++ para que no entre en bucle infinito
+				i++;
+			}
+			
+			var x = 0;
+			while(x <= numPosiciones){
+				document.write(matriz[x] + saltoLinea);
+				//i++ para que no entre en bucle infinito
+				x++;
+			}
+			
+			
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scope Javascript- Ambito de las variables</title>
+</head>
+<body>
+    <script>
+        //Global - Se puede accedes desde cualquier parte del código
+        /*Local - Variables creadas dentro de funcion, solo pueden ser accedidas 
+         desde su función o una función anidada.*/
+
+        var variableGlobal = "Esta es Global";
+
+        function miFuncion(){
+            //si se le quita el var variable local se vuelve global
+            var variableLocal = "Esta es local";
+            alert(variableLocal);
+            alert(variableGlobal);
+            variableGlobal = "Esta es global, modificada";
+            alert(variableGlobal);
+        }
+        function funcionLocal(){
+            var variableLocal = "Esta es variable local, dentro de funcion local";
+            alert(variableLocal);
+        }
+        miFuncion();
+        funcionLocal();
+    </script>
+    
+</body>
+</html>

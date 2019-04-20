@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modificando DOM</title>
+</head>
+<body>
+    <ol id="lista">
+        <li>1.-Don Quijote de la Manchaa​ es una novela escrita</li>
+        <li>2.-española y de las principales de la literatura </li>
+    </ol>
+    
+    <script>
+        var saltoLinea = "<br>";
+        var elemento = document.createElement("li");
+        var contenido = document.createTextNode("Nuevo Texto");
+
+        elemento.appendChild(contenido);
+        document.body.appendChild(elemento);
+
+        /*Obtiene todos los elementos "li"
+        ,obtiene el primero del array y parent node
+        nos devuelve el elemento padre que es "ol"
+        entonces añadimos un nuevo "li" elemento*/
+        var padre = document.getElementsByTagName("li")[0].parentNode;
+        padre.appendChild(elemento);
+        //Lo mismo de antes pero al principio de la lista antes de "primer elemento"
+        var primerElemento = document.getElementsByTagName("li")[0];
+        padre.insertBefore(elemento, primerElemento )
+
+        document.write(padre.textContent  + saltoLinea);
+    </script>
+</body>
+</html>

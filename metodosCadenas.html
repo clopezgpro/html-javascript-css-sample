@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Metodos para cadenas de texto</title>
+</head>
+<body>
+    <script>
+        var saltoLinea = "<br>";
+        var texto = "Texto alfanumerico";
+        var textoSize = texto.length;
+        var textoCortado = texto.substring(3);//Se quitan 3 primeros caracteres
+        var textoCortado2 = texto.substring(6,18);//Se muestra texto desde la posición 6 a la 18
+        var posicionLetra = texto.lastIndexOf("a");//Muestra "a" desde la posicion final(18)
+        var posicionLetra2 = texto.indexOf("a",4);//Busca "a" desde la posicion incial 4
+        var sustituirTexto = texto.replace(texto, "Texto Reemplazado");
+        var sustituirTexto2 = texto.replace("a", "U");
+        var textoMayusculas = texto.toUpperCase(); //A mayúsculas
+        var textoMinuscula = texto.toLowerCase(); //A minúsculas
+
+        document.write(textoSize + saltoLinea);
+        document.write(textoCortado + saltoLinea);
+        document.write(textoCortado2 + saltoLinea);
+        document.write(posicionLetra + saltoLinea);
+        document.write(posicionLetra2 + saltoLinea);
+        document.write(sustituirTexto + saltoLinea);
+        document.write(sustituirTexto2 + saltoLinea);
+        document.write(textoMayusculas + saltoLinea);
+        document.write(textoMinuscula + saltoLinea);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Funciones</title>
+		<script type="text/javascript">
+			var saltoLinea = "<br>";
+	
+			function saludo(valor){
+				document.write("Hola esto es una funcion: " + valor + saltoLinea);
+			}
+			
+			function suma(numero1, numero2){
+				var numero1 = numero1;
+				var numero2 = numero2;
+				//document.write(numero1 + numero2 + saltoLinea);
+			return numero1 + numero2;
+			}
+			
+			var resta = function resta(numero1, numero2){
+				var numero1 = numero1;
+				var numero2 = numero2;
+				//document.write(numero1 + numero2 + saltoLinea);
+			return numero1 - numero2;
+			}
+			
+			function numeroMaximo(valor1, valor2){
+				if(valor1 > valor2){
+					return valor1;
+				}
+			return valor2;
+			}
+			
+			saludo("parametro");
+			document.write("Suma: " + suma(10,30) + saltoLinea);
+			document.write("Resta: " + resta(50,30) + saltoLinea);
+			document.write("Num. Máximo: " + numeroMaximo(1,7) + saltoLinea);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

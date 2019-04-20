@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Matrices</title>
+	</head>
+	<body>
+	<script type="text/javascript">
+		var saltoLinea = "<br>";
+		var matriz = ["valor1","valor2","valor3"];
+		var matriz2 = ["valor8","valor9","valor10"];
+		matriz[0] = "Valor Cambiado";
+		document.write(matriz[0] + saltoLinea);		
+		document.write(matriz.length + saltoLinea);
+		matriz[matriz.length] = "Valor añadido al final matriz";
+		document.write(matriz.length + saltoLinea);
+		//añadir valores al array
+		matriz.push("addValor6","addValor7","addValor8");
+		document.write(matriz.length + saltoLinea);
+		//elimina el último valor
+		matriz.pop();
+		document.write(matriz.length + saltoLinea);
+		var matriz3 = matriz.concat(matriz2);
+		document.write(matriz3.length + saltoLinea);
+		//Muestra todos los valores del array
+		document.write(matriz3.join(" , ") + saltoLinea);
+		//Muestra valores array ordenados
+		document.write(matriz3.sort() + saltoLinea);
+		//Muestra valores array invertidos
+		document.write(matriz3.reverse() + saltoLinea);
+	</script>
+	
+	
+	</body>
+</html>
